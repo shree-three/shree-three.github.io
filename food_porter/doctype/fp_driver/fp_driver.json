@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Driver-{#####}-{name1}",
+ "creation": "2024-03-22 16:05:17.429058",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_clli",
+  "name1",
+  "email",
+  "profile_image",
+  "column_break_vdoe",
+  "contact_no",
+  "address",
+  "google_maps_link",
+  "available_on_day",
+  "sun",
+  "column_break_egdv",
+  "mon",
+  "column_break_flad",
+  "tue",
+  "column_break_gjd2",
+  "wed",
+  "column_break_ulul",
+  "thurs",
+  "column_break_dvzk",
+  "fri",
+  "column_break_ylnm",
+  "sat",
+  "section_break_8r8n",
+  "vehicle_type",
+  "rs_per_km",
+  "column_break_h1na",
+  "add_driving_licence"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_clli",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach",
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "available_on_day",
+   "fieldtype": "Section Break",
+   "label": "Available On Day"
+  },
+  {
+   "default": "0",
+   "fieldname": "sun",
+   "fieldtype": "Check",
+   "label": "Sun"
+  },
+  {
+   "default": "0",
+   "fieldname": "mon",
+   "fieldtype": "Check",
+   "label": "Mon"
+  },
+  {
+   "fieldname": "column_break_egdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_flad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tue",
+   "fieldtype": "Check",
+   "label": "Tue"
+  },
+  {
+   "fieldname": "column_break_gjd2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "wed",
+   "fieldtype": "Check",
+   "label": "Wed"
+  },
+  {
+   "fieldname": "column_break_ulul",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "thurs",
+   "fieldtype": "Check",
+   "label": "Thur"
+  },
+  {
+   "fieldname": "column_break_dvzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fri",
+   "fieldtype": "Check",
+   "label": "Fri"
+  },
+  {
+   "fieldname": "column_break_ylnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sat",
+   "fieldtype": "Check",
+   "label": "Sat"
+  },
+  {
+   "fieldname": "column_break_vdoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No.",
+   "options": "phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "label": "Vehicle Type",
+   "options": "\nRickshaw\nSmall Tempo\nLarge Tempo"
+  },
+  {
+   "fieldname": "section_break_8r8n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rs_per_km",
+   "fieldtype": "Data",
+   "label": "Rs Per Km"
+  },
+  {
+   "fieldname": "column_break_h1na",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_driving_licence",
+   "fieldtype": "Attach",
+   "label": "Add Driving Licence"
+  },
+  {
+   "fieldname": "google_maps_link",
+   "fieldtype": "HTML",
+   "label": "Google Map"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-02 12:11:12.005426",
+ "modified_by": "Administrator",
+ "module": "Food Porter",
+ "name": "FP Driver",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Driver",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

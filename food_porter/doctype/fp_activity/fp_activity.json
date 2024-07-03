@@ -1,0 +1,215 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Activity-{#####}",
+ "creation": "2024-03-26 18:51:51.912779",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vlfi",
+  "name1",
+  "quantity",
+  "food_items_veg_only",
+  "images",
+  "column_break_jqy6",
+  "contact_no",
+  "pickup_time",
+  "waiting_time_in_minutes_section",
+  "30",
+  "column_break_lqwi",
+  "45",
+  "column_break_dr5y",
+  "60",
+  "section_break_p1fn",
+  "other",
+  "column_break_ntzr",
+  "mention_time",
+  "location_details_section",
+  "pickup_address",
+  "column_break_3c2v",
+  "select_drop_off_address",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vlfi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "description": "Persons",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "food_items_veg_only",
+   "fieldtype": "Data",
+   "label": "Food Items (Veg Only)"
+  },
+  {
+   "fieldname": "waiting_time_in_minutes_section",
+   "fieldtype": "Section Break",
+   "label": "Waiting Time (In Minutes)"
+  },
+  {
+   "default": "0",
+   "fieldname": "30",
+   "fieldtype": "Check",
+   "label": "30"
+  },
+  {
+   "fieldname": "column_break_lqwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "45",
+   "fieldtype": "Check",
+   "label": "45"
+  },
+  {
+   "fieldname": "column_break_dr5y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "60",
+   "fieldtype": "Check",
+   "label": "60"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Attach Image",
+   "label": "Images"
+  },
+  {
+   "fieldname": "location_details_section",
+   "fieldtype": "Section Break",
+   "label": "Location Details"
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Data",
+   "label": "Pickup Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3c2v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_drop_off_address",
+   "fieldtype": "Link",
+   "label": "Select Drop-off Address ",
+   "options": "FP Hungerspot"
+  },
+  {
+   "fieldname": "column_break_jqy6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact No.",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Data",
+   "label": "Pickup Time"
+  },
+  {
+   "fieldname": "section_break_p1fn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.other ==1",
+   "fieldname": "mention_time",
+   "fieldtype": "Data",
+   "label": "Mention time",
+   "mandatory_depends_on": "eval:doc.other ==1"
+  },
+  {
+   "fieldname": "column_break_ntzr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other than these"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "FP Activity",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-27 12:18:05.100835",
+ "modified_by": "Administrator",
+ "module": "Food Porter",
+ "name": "FP Activity",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Driver",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
